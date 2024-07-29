@@ -179,6 +179,7 @@ h2 {
 /* Projects */
 #projects{padding-bottom: 1rem;}
 #projects p{margin-left: 3.3rem;}
+#projects a{color: #65408a;}
 .projects-container {margin-top: 2rem; margin-left: 2.5rem;}
 .project-card { margin: 1rem; padding-bottom: .5rem; display: flex;}
 .project-card h3 { font-size: 25px; margin-left: 2rem;}
