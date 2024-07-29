@@ -8,7 +8,8 @@ body {
 /* Navigation Bar */
 
 #home {
-  background-color: #65408a;
+  background: #65408a url('images/nebula-nav.jpg') center center no-repeat;
+  background-size: cover;
   padding: 1.5rem;
   margin: -1rem;
   overflow: hidden;
@@ -132,6 +133,8 @@ h2 {
   display: flex;
   flex-direction: row;
   flex-flow: wrap;
+  justify-content: space-between;
+  padding: .5rem 1.5rem;
 }
 
 .skill {
@@ -139,18 +142,15 @@ h2 {
   display: block;
   border-radius: 6px;
   text-align: center;
-  margin: 50px;
-  padding: 30px 10px;
-  width: 250px;
+  margin: 2rem 1.5rem;
+  padding: 2rem .5rem;
+  width: 25%;
   max-width: 100%;
   font-size: 20px;
   box-shadow: 0 3px 10px gray;
 }
 
-.skill img {
-  height: 42px;
-  align-items: center;
-}
+.skill img { height: 42px; align-items: center; }
 
 .skill h6 {
   align-items: center;
@@ -173,8 +173,8 @@ h2 {
   align-items: center;
   justify-content: center;
 }
-@media screen and (max-width: 796px) {.skill{margin: 20px 40px; }}
-
+@media screen and (max-width: 805px) {.skill{margin: 1rem; width:40%;}}
+@media screen and (max-width: 560px) {.all_skills{padding: .5rem; justify-content: center; } .skill{ width:90%;}}
 
 /* Projects */
 #projects{padding-bottom: 1rem;}
@@ -219,7 +219,8 @@ h2 {
 
 /* Contact Form */
 
-#contact{ background: #65408a; padding-top: 4rem; padding-bottom: 4rem; margin: -1rem;}
+#contact{background: #65408a url('images/nebula.jpg') center center no-repeat;
+  background-size: cover; padding-top: 4rem; padding-bottom: 4rem; margin: -1rem;}
 .flex-center{display: flex; justify-content: center; align-items: center;}
 .introduction { color: #fff; font-size: 40px; text-align: left; position: relative;}
 input, textarea {
