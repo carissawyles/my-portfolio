@@ -290,3 +290,6 @@ button:hover, button:focus {
   cursor: pointer;
   margin-left: 25%;
 }
+
+.hidden{display: none;}
+.error{font-size: .8em; font-weight: bold; color: red; background: white; padding: .1em .3em; margin: 0;     width: 100%;}
