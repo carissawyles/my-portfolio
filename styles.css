@@ -1,10 +1,16 @@
+/* variables */
+:root {
+  --main-color: #65408a;
+}
+
+/* CSS */
 html{scroll-behavior: smooth; overflow-x: hidden;}
-body {font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+body {overflow: hidden; font-family: 'Trebuchet MS',  Arial, sans-serif;}
 
 /* Navigation Bar */
 
 #home {
-  background: #65408a url('images/nebula-nav.jpg') center center no-repeat;
+  background: var(--main-color) url('images/nebula-nav.jpg') center center no-repeat;
   background-size: cover;
   padding: 1.5rem;
   margin: -1rem;
@@ -66,7 +72,7 @@ body {font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Luci
 
 h2 {
   font-size: 50px;
-  color: #65408a;
+  color: var(--main-color);
   margin-left: 1.1em;
   margin-top: .6em;
   margin-bottom: 0px;
@@ -86,10 +92,10 @@ h2 {
   padding: 2rem 0;
 }
 .container div{width: 48%; padding: 1rem;}
-.container h1 {color: #65408a; font-size: 60px; margin-block-start: 0;}
+.container h1 {color: var(--main-color); font-size: 60px; margin-block-start: 0;}
 .container p {font-size: 25px; color: #707070; margin-top: -1em;}
-.container a{color: #65408a; text-decoration: none;}
-.container a:hover, .container a:focus{border-bottom: 2px solid #65408a; }
+.container a{color: var(--main-color); text-decoration: none;}
+.container a:hover, .container a:focus{border-bottom: 2px solid var(--main-color); }
 .profile_image {text-align: center;}
 .profile_image img{width: 500px; max-width: 100%; margin: 0 auto;}
 
@@ -174,26 +180,29 @@ h2 {
 
 /* Projects */
 #projects{padding-bottom: 1rem;}
-#projects p{margin-left: 3.3rem;}
-#projects a{color: #65408a;}
+#projects a{color: var(--main-color);}
 .projects-container {margin-top: 2rem; margin-left: 2.5rem;}
 .project-card { margin: 1rem; padding-bottom: .5rem; display: flex;}
 .project-card h3 { font-size: 25px; margin-left: 2rem;}
 .project-card li { font-size: 20px;  margin-left: 2rem; padding-bottom: 1.5rem;}
 .project-img{position: relative; margin-bottom: 7rem;}
-.project-img img{ border: 2px solid #65408a;}
+.project-img img{ border: 2px solid var(--main-color);}
 .desktop-design{width: 400px;}
 .mobile-design{width: 150px; position: absolute;  right: -20px; top: 100px;}
+.note{background: var(--main-color); color: white; padding: 1rem; width: 91%; margin-left: 3.3rem;}
+.note a{color: #fff !important;}
+.note a:hover{text-decoration: underline;}
 
 @media screen and (max-width: 796px) {.project-card{flex-wrap: wrap; padding-bottom: 1.5rem;} .project-img{margin-bottom: 3rem;}}
 @media screen and (max-width: 570px) {
-	#projects p{margin-left: 2rem;}
-	.projects-container{margin-left: .5rem;}
+	#projects p{}
+	.projects-container{margin-left: 0;}
 	.project-card h3{font-size: 20px; margin-left: 1rem;}
-	.project-card li{font-size: 18px; margin-left: 1rem;}
+	.project-card li{font-size: 18px; margin-left: 0;}
 	.project-img{margin-bottom: 2rem;}
 	.desktop-design{max-width: 100%;}
 	.mobile-design{max-width: 50%;  right: -20px; top: 80px;}
+	.note{margin-left: 0;}
 }
 @media screen and (max-width: 410px) {.project-img{margin-bottom: 3.3rem;}.mobile-design{top: 40px;}}
 
@@ -203,7 +212,7 @@ h2 {
   width: 48px;
   height: 48px;
   border-radius: 100%;
-  background-color: #65408a;
+  background-color: var(--main-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -215,7 +224,7 @@ h2 {
 
 /* Contact Form */
 
-#contact{background: #65408a url('images/nebula.jpg') center center no-repeat;
+#contact{background: var(--main-color) url('images/nebula.jpg') center center no-repeat;
   background-size: cover; padding-top: 4rem; padding-bottom: 4rem; margin: -1rem;}
 .flex-center{display: flex; justify-content: center; align-items: center;}
 .introduction { color: #fff; font-size: 40px; text-align: left; position: relative;}
@@ -229,10 +238,10 @@ fieldset { padding: 2rem; border: thin solid white; width: 50%;}
 
 /* Buttons */
 
-button {
+button, .btn {
   background-color: #fff;
-  border: 1px solid #65408a;
-  color: #65408a;
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
   display: block;
   border-radius: 6px;
   margin: 10px;
@@ -241,8 +250,8 @@ button {
   font-size: 20px;
 }
 
-button:hover, button:focus {
-  background-color: #65408a;
+button:hover, button:focus, .btn:hover, .btn:focus {
+  background-color: var(--main-color);
   border: 1px solid #fff;
   color: #fff;
   display: block;
@@ -250,6 +259,8 @@ button:hover, button:focus {
   cursor: pointer;
 }
 
+.btn{text-decoration: none; display: block; }
+.btn:hover, .btn:focus{color: #fff !important;}
 /* Form Pop-up */
 
 .popup {
@@ -269,8 +280,8 @@ button:hover, button:focus {
 }
 .popup button {
   background-color: #fff;
-  border: 1px solid #65408a;
-  color: #65408a;
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
   display: block;
   border-radius: 6px;
   text-align: center;
@@ -282,8 +293,8 @@ button:hover, button:focus {
 }
 .popup button:hover, .popup button:focus {
   background-color: #fff;
-  border: 2px solid #65408a;
-  color: #65408a;
+  border: 2px solid var(--main-color);
+  color: var(--main-color);
   display: block;
   font-weight: bolder;
   text-align: center;
