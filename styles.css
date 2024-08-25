@@ -52,6 +52,7 @@ body {overflow: hidden; font-family: 'Trebuchet MS',  Arial, sans-serif; margin:
   text-decoration: underline;
 }
 
+@media screen and (max-width: 870px) {.nav{padding-right: 1rem;}}
 @media screen and (max-width: 805px) {
   #home{padding: 1rem 0;}
   .nav {
@@ -116,7 +117,7 @@ h2 {
 }
 
 @media screen and (max-width: 870px) {
-  .container {flex-direction: column; padding-bottom: 0;}
+  .container {flex-direction: column; padding-bottom: 0; padding-left: 1rem; padding-right: 1rem;}
   .container div{width: 100%; text-align: center;}
   .profile_image img{width: 350px; max-width: 100%;}
 }
