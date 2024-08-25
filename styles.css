@@ -193,7 +193,7 @@ h2 {
 @media screen and (max-width: 796px) {.project-card{flex-wrap: wrap; padding-bottom: 1.5rem;} .project-img{margin-bottom: 3rem;}}
 @media screen and (max-width: 570px) {
 	#projects p{}
-	.projects-container{margin-left: 0;}
+	.projects-container{ margin-left: 1rem; margin-right: 1rem;}
 	.project-card h3{font-size: 20px; margin-left: 1rem;}
 	.project-card li{font-size: 18px; margin-left: 0;}
 	.project-img{margin-bottom: 2rem;}
@@ -241,11 +241,12 @@ button, .btn {
   border: 1px solid var(--main-color);
   color: var(--main-color);
   display: block;
-  border-radius: 6px;
-  margin: 10px;
-  padding: 10px;
+  border-radius: .5rem;
+  margin: .75rem 0;
+  padding: .75rem .5rem;
   width: 2in;
-  font-size: 20px;
+  font-size: 1.2rem;
+  text-align: center;
 }
 
 button:hover, button:focus, .btn:hover, .btn:focus {
@@ -253,7 +254,7 @@ button:hover, button:focus, .btn:hover, .btn:focus {
   border: 1px solid #fff;
   color: #fff;
   display: block;
-  border-radius: 6px;
+  border-radius: .5rem;
   cursor: pointer;
 }
 
