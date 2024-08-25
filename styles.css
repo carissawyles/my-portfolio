@@ -5,15 +5,12 @@
 
 /* CSS */
 html{scroll-behavior: smooth; overflow-x: hidden;}
-body {overflow: hidden; font-family: 'Trebuchet MS',  Arial, sans-serif;}
+body {overflow: hidden; font-family: 'Trebuchet MS',  Arial, sans-serif; margin: 0;}
 
 /* Navigation Bar */
-
 #home {
-  background: var(--main-color) url('images/nebula-nav.jpg') center center no-repeat;
-  background-size: cover;
+  background: var(--main-color);
   padding: 1.5rem;
-  margin: -1rem;
   overflow: hidden;
   display: flex;
   justify-content: space-between;
@@ -64,7 +61,7 @@ body {overflow: hidden; font-family: 'Trebuchet MS',  Arial, sans-serif;}
   }
   .nav_item{
 	  margin: 0;
-	  padding: .25em 0;
+	  padding: 0;
   }
 }
 
@@ -236,6 +233,7 @@ input, textarea {
 }
 fieldset { padding: 2rem; border: thin solid white; width: 50%;}
 
+@media screen and (max-width: 560px) {fieldset{width: 69%;}}
 /* Buttons */
 
 button, .btn {
