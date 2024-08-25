@@ -181,27 +181,26 @@ h2 {
 .projects-container {margin-top: 2rem; margin-left: 2.5rem;}
 .project-card { margin: 1rem; padding-bottom: .5rem; display: flex;}
 .project-card h3 { font-size: 25px; margin-left: 2rem;}
-.project-card li { font-size: 20px;  margin-left: 2rem; padding-bottom: 1.5rem;}
+.project-card ul ul{padding-inline-start: 0; margin-top: .5rem;}
+.project-card li { font-size: 20px;  margin-left: 1.5rem; padding-bottom: 1.5rem;}
 .project-img{position: relative; margin-bottom: 7rem;}
 .project-img img{ border: 2px solid var(--main-color);}
 .desktop-design{width: 400px;}
 .mobile-design{width: 150px; position: absolute;  right: -20px; top: 100px;}
-.note{background: var(--main-color); color: white; padding: 1rem; width: 91%; margin-left: 3.3rem;}
+.note{background: var(--main-color); color: white; padding: 1rem; width: 91%; margin: 0 auto;}
 .note a{color: #fff !important;}
 .note a:hover{text-decoration: underline;}
 
 @media screen and (max-width: 796px) {.project-card{flex-wrap: wrap; padding-bottom: 1.5rem;} .project-img{margin-bottom: 3rem;}}
 @media screen and (max-width: 570px) {
-	#projects p{}
 	.projects-container{ margin-left: 1rem; margin-right: 1rem;}
 	.project-card h3{font-size: 20px; margin-left: 1rem;}
 	.project-card li{font-size: 18px; margin-left: 0;}
 	.project-img{margin-bottom: 2rem;}
 	.desktop-design{max-width: 100%;}
 	.mobile-design{max-width: 50%;  right: -20px; top: 80px;}
-	.note{margin-left: 0;}
 }
-@media screen and (max-width: 410px) {.project-img{margin-bottom: 3.3rem;}.mobile-design{top: 40px;}}
+@media screen and (max-width: 410px) {.project-img{margin-bottom: 3.3rem;}.mobile-design{top: 40px;} .project-card ul ul{padding-inline-start: 1.5rem;}}
 
 /* Scroll to Top Button */
 
@@ -260,6 +259,9 @@ button:hover, button:focus, .btn:hover, .btn:focus {
 
 .btn{text-decoration: none; display: block; }
 .btn:hover, .btn:focus{color: #fff !important;}
+
+@media screen and (max-width: 410px) {button, .btn{font-size: .9rem; padding: .5rem; width: 1.4in; }}
+
 /* Form Pop-up */
 
 .popup {
